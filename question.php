@@ -54,7 +54,7 @@
         <input type="hidden" name="lang_answer" value="<?php echo $lang_answer; ?>">
         <input type="hidden" name="sql_answer" value="<?php echo $sql_answer; ?>">
 
-        <input type="submit">
+        <input type="submit" value="回答する">
 
     </form>
 
