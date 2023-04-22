@@ -11,6 +11,9 @@
     $sql = ["join","select","insert","update"];
 
     //② ①で作成した、配列から正解の選択肢の変数を作成
+    $port_answer = "80";
+    $lang_answer = "HTML";
+    $sql_answer = "select";
 
     ?>
 
@@ -46,10 +49,12 @@
         <!--名前の変数を[answer.php]へ送る-->
         <input type="hidden" name="name" value="<?php echo $name;?>"/>
 
-        <input type="submit">
-
         <!--問題の正解の変数と名前の変数を[answer.php]に送る-->
+        <input type="hidden" name="port_answer" value="<?php echo $port_answer; ?>">
+        <input type="hidden" name="lang_answer" value="<?php echo $lang_answer; ?>">
+        <input type="hidden" name="sql_answer" value="<?php echo $sql_answer; ?>">
 
+        <input type="submit">
 
     </form>
 
