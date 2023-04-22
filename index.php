@@ -7,8 +7,6 @@
   <title>Practice2</title>
 </head>
 <body>
-  <!-- ①フォームを作成しましょう -->
-
   <form action="result.php" method="post">
     好きな名前を入れてください<br>
     <input type="text" name="name">
@@ -24,9 +22,6 @@
     </select>
     <br>
     <input type="submit">
-  </form>
-
-  <!-- ここにフォームを記述してください -->
   </form>
 </body>
 </html>

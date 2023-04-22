@@ -27,15 +27,14 @@
   }elseif($num >= 1){
     $result = "凶";
   }
-  //⑤今日の日付と、名前、番号、おみくじ結果を表示しましょう
 
-  echo date("Y-m-d H:i:s", time());
+  //⑤今日の日付と、名前、番号、おみくじ結果を表示
+  date_default_timezone_set ('Asia/Tokyo');
+  echo date("Y-m-d H:i:s");
   echo '<br>';
   echo "名前は",$name,"です。";
   echo '<br>';
   echo "番号は",$num,"です。";
   echo '<br>';
   echo "結果は",$result,"です。";
-
-  date_default_timezone_set('Asia/Tokyo');
   ?>
