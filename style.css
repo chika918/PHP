@@ -1,0 +1,52 @@
+body {
+    width: 1000px;
+}
+header {
+    height: 120px;
+    display: flex;
+}
+.logo {
+    width: 200px;
+    background-color: #add8e6;
+    display: flex;
+    justify-content: center;
+}
+.info {
+    width: 800px;
+}
+.name {
+    height: 50%;
+    background-color: #87ceeb;
+    margin: 0 auto;
+}
+.time {
+    height: 50%;
+    background-color: #00ffff;
+    margin: 0 auto;
+}
+.info_p{
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: right;
+}
+main {
+    margin: 10px 10px;
+}
+
+table {
+    width: 83%;
+    margin: auto;
+}
+th {
+    background-color: #87ceed;
+}
+td {
+    background-color: #e0ffff;
+}
+footer {
+    height: 50px;
+    background-color: #00ced1;
+}
+footer p {
+    margin: 0 auto;
+}
