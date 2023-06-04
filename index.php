@@ -1,7 +1,5 @@
-<link rel="stylesheet" href="style.css">
 
-<body>
-    <?php
+<?php
         require_once("getData.php");
 
         try {
@@ -13,8 +11,16 @@
             echo 'Error: ' . $e->getMessage();
             die();
         } 
-    ?> 
+?> 
 
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
     <header>
         <div class="logo">
             <img src="1599315827_logo.png" alt="">
@@ -45,50 +51,24 @@
 
             <?php
                 //記事情報の書き出し（連想配列にする）
-                while($row = $postdata->fetch(PDO::FETCH_ASSOC)){
-                    $id = $row['id'];
-                    $title = $row['title'];
-                    $no = $row['category_no'];
-                    $comment = $row['comment'];
-                    $day = $row['created'];?>
-
-                <tr>
-                    <td>
-                        <?php 
-                            echo $id;
-                            echo '<br>';
-                        ?>
-                    </td>
-                    <td>
-                        <?php
-                            echo $title;
-                            echo '<br>';
-                        ?>
-                    </td>
-                    <td>
-                        <?php
-                            if($no == '1'){
-                                echo '食事';
-                            } elseif ($no == '2'){
-                                echo '旅行';
-                            } else {
-                                echo 'その他';
-                            }
-                            echo '<br>';
-                        ?>
-                    </td>
-                    <td>
-                        <?php
-                            echo $comment;
-                            echo '<br>';
-                        ?>
-                    </td>
-                    <td>
-                        <?php
-                            echo $day;
-                            echo '<br>';
-                        ?>
-                    </td>
+                while($row = $postdata->fetch(PDO::FETCH_ASSOC)){ ?>
+                    <tr>
+                        <td><?php echo $row['id'];?></td>
+                        <td><?php echo $row['title'];?></td>
+                        <td>
+                            <?php
+                                if($row['category_no'] == '1'){
+                                    echo '食事';
+                                } elseif ($row['category_no'] == '2'){
+                                    echo '旅行';
+                                } else {
+                                    echo 'その他';
+                                }
+                            ?>
+                        </td>
+                        <td><?php echo $row['comment'];?></td>
+                        <td><?php echo $row['created'];?></td>
+                    </tr>
             <?php } ?>
         </table>
     </main>
@@ -98,10 +78,3 @@
     </footer>
 </body>
 </html>
-
-
-
-
-
-
-
