@@ -1,0 +1,89 @@
+/*ログイン画面：ヘッダー*/
+.head {
+    width: 400px;
+    margin-bottom: 15px;
+}
+.head .title {
+    display: inline;
+}
+
+/*ログイン画面、本登録画面：テキストボックス*/
+.input {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+/*ログイン画面、本登録画面：サブミットボタン*/
+.in {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(38, 98, 218);
+    border: none;
+    color: white;
+    border-radius: 5px; 
+}
+
+/*ログイン画面：新規ユーザー作成ボタン*/
+.new-user {
+    width: 150px;
+    height: 40px;
+    margin-left: 52px;
+    background-color: rgb(17, 197, 213);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+/*在庫一覧*/
+body {
+    width: 1080px;
+}
+.new {
+    width: 80px;
+    background-color: rgb(38, 98, 218);
+    margin-right: 10px;
+}
+.logout {
+    width: 100px;
+    background-color: #6d6e70;
+}
+.new, .logout {
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.del {
+    width: 55px;
+    height: 30px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+table {
+    width: 650px;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid rgb(211, 209, 209);
+}
+.t-head{
+    background-color: rgba(0,0,0,.05);
+    font-weight: bold;
+}
+td {
+    height: 50px;
+    border-collapse: collapse;
+    border: 1px solid rgb(211, 209, 209);
+}
+
+/*本登録*/
+.stock {
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+}
